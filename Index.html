@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="color-scheme" content="dark" />
+  <title>FootballLife — Privacy Policy</title>
+  <meta name="description" content="Privacy Policy for the FootballLife mobile game." />
+
+  <style>
+    :root{
+      /* Palette sampled from the game screenshot */
+      --bg0: #081028;   /* deep stadium blue */
+      --bg1: #0B1734;
+      --panel: #202020; /* dark card */
+      --panel2:#303030; /* slightly lighter */
+      --stroke: rgba(255,255,255,.10);
+      --text: #E8F2EE;
+      --muted:#A7B7B1;
+      --accent:#389868; /* main green */
+      --accent2:#48B88B; /* lighter green */
+      --shadow: 0 18px 40px rgba(0,0,0,.45);
+      --radius: 16px;
+      --radius2: 22px;
+      --max: 980px;
+    }
+
+    *{ box-sizing: border-box; }
+    html,body{ height:100%; }
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Noto Sans", "Liberation Sans", sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(1200px 600px at 20% -10%, rgba(56,152,104,.35), rgba(56,152,104,0) 60%),
+        radial-gradient(1000px 600px at 85% 10%, rgba(72,184,139,.22), rgba(72,184,139,0) 55%),
+        radial-gradient(900px 700px at 50% 120%, rgba(255,255,255,.08), rgba(255,255,255,0) 55%),
+        linear-gradient(180deg, var(--bg0), var(--bg1));
+    }
+
+    a{ color: var(--accent2); text-decoration: none; }
+    a:hover{ text-decoration: underline; }
+
+    .wrap{
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 28px 16px 56px;
+    }
+
+    header{
+      display:flex;
+      align-items:flex-start;
+      justify-content:space-between;
+      gap: 16px;
+      padding: 18px 18px;
+      background: linear-gradient(180deg, rgba(48,48,48,.75), rgba(32,32,32,.75));
+      border: 1px solid var(--stroke);
+      border-radius: var(--radius2);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(8px);
+    }
+
+    .brand{
+      display:flex;
+      gap:14px;
+      align-items:center;
+      min-width: 0;
+    }
+
+    .badge{
+      width: 44px;
+      height: 44px;
+      border-radius: 14px;
+      background:
+        radial-gradient(circle at 30% 30%, rgba(72,184,139,.9), rgba(56,152,104,.6) 55%, rgba(56,152,104,.15) 100%),
+        linear-gradient(180deg, rgba(255,255,255,.12), rgba(255,255,255,0));
+      border: 1px solid rgba(72,184,139,.55);
+      box-shadow: 0 10px 22px rgba(0,0,0,.35);
+      display:grid;
+      place-items:center;
+      flex: 0 0 auto;
+    }
+    .badge svg{ opacity:.95; }
+
+    h1{
+      margin:0;
+      font-size: 22px;
+      letter-spacing: .2px;
+      line-height: 1.15;
+      white-space: nowrap;
+      overflow:hidden;
+      text-overflow: ellipsis;
+    }
+
+    .sub{
+      margin: 6px 0 0;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .meta{
+      display:flex;
+      flex-direction:column;
+      align-items:flex-end;
+      gap:10px;
+      flex:0 0 auto;
+    }
+
+    .pill{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding: 8px 10px;
+      border-radius: 999px;
+      border: 1px solid rgba(56,152,104,.55);
+      background: rgba(32,32,32,.55);
+      color: var(--text);
+      font-size: 12px;
+      letter-spacing: .2px;
+      white-space: nowrap;
+    }
+    .dot{
+      width: 8px;
+      height: 8px;
+      border-radius: 999px;
+      background: var(--accent2);
+      box-shadow: 0 0 0 4px rgba(72,184,139,.18);
+    }
+
+    main{
+      margin-top: 18px;
+      display:grid;
+      grid-template-columns: 1fr;
+      gap: 14px;
+    }
+
+    .card{
+      padding: 18px 18px;
+      background: linear-gradient(180deg, rgba(48,48,48,.82), rgba(32,32,32,.82));
+      border: 1px solid var(--stroke);
+      border-radius: var(--radius2);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(8px);
+    }
+
+    .card h2{
+      margin:0 0 10px;
+      font-size: 16px;
+      letter-spacing: .3px;
+      display:flex;
+      align-items:center;
+      gap:10px;
+    }
+
+    .card h2::before{
+      content:"";
+      width: 10px;
+      height: 10px;
+      border-radius: 3px;
+      background: var(--accent);
+      box-shadow: 0 0 0 4px rgba(56,152,104,.18);
+    }
+
+    .card p, .card li{
+      color: rgba(232,242,238,.92);
+      line-height: 1.55;
+      font-size: 14px;
+    }
+
+    .card p{ margin: 10px 0; }
+    .card ul{ margin: 10px 0 0 18px; }
+    .note{
+      margin-top: 12px;
+      padding: 12px 12px;
+      border-radius: 14px;
+      border: 1px solid rgba(56,152,104,.35);
+      background: rgba(56,152,104,.10);
+      color: rgba(232,242,238,.95);
+      font-size: 13px;
+    }
+
+    footer{
+      margin-top: 18px;
+      color: rgba(167,183,177,.85);
+      font-size: 12px;
+      text-align:center;
+      padding: 10px 0 0;
+    }
+
+    @media (min-width: 860px){
+      main{ grid-template-columns: 1fr 1fr; }
+      .span2{ grid-column: 1 / -1; }
+    }
+
+    @media (prefers-reduced-motion: no-preference){
+      header, .card{
+        transition: transform .18s ease, border-color .18s ease;
+      }
+      header:hover, .card:hover{
+        transform: translateY(-2px);
+        border-color: rgba(72,184,139,.32);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="badge" aria-hidden="true">
+          <!-- simple football-ish icon -->
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+            <path d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18Z" stroke="rgba(232,242,238,.92)" stroke-width="1.8"/>
+            <path d="M12 7.2 15.2 9l-1.2 3.4H10L8.8 9 12 7.2Z" stroke="rgba(232,242,238,.92)" stroke-width="1.6" stroke-linejoin="round"/>
+            <path d="M8.8 9 6.4 10.3l.6 3.6 3 1.5" stroke="rgba(232,242,238,.75)" stroke-width="1.4" stroke-linecap="round"/>
+            <path d="M15.2 9 17.6 10.3l-.6 3.6-3 1.5" stroke="rgba(232,242,238,.75)" stroke-width="1.4" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div style="min-width:0">
+          <h1>FootballLife — Privacy Policy</h1>
+          <div class="sub">Applies to the FootballLife mobile game (Android / Google Play).</div>
+        </div>
+      </div>
+
+      <div class="meta">
+        <div class="pill"><span class="dot"></span><span>General audience • Ads enabled</span></div>
+        <div class="pill" title="Update this date when you change the policy">
+          Last updated: <strong>2026-02-21</strong>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="card span2">
+        <h2>1. Information We Collect</h2>
+        <p>
+          The Game does <strong>not</strong> require user accounts and does <strong>not</strong> directly collect,
+          store, or transmit personal data such as names, email addresses, or phone numbers.
+        </p>
+        <p>
+          Game progress and settings are stored <strong>locally on the user’s device</strong> using local storage
+          technologies (including <strong>SQLite</strong>). These data <strong>never leave the device</strong> and are
+          <strong>not accessible to us</strong>.
+        </p>
+        <div class="note">
+          Tip: If you later add cloud sync, accounts, analytics, or backend user profiles — update this policy and your
+          Google Play “Data safety” form.
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>2. Automatically Collected Information</h2>
+        <p>
+          Although the Game itself does not collect personal data, certain information may be collected automatically by
+          third-party services used by the Game or by the platform, including:
+        </p>
+        <ul>
+          <li>device type and model</li>
+          <li>operating system and version</li>
+          <li>language and approximate country/region</li>
+          <li>app usage, performance data, crash reports</li>
+          <li>advertising identifiers (for ads and measurement)</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>3. Advertising</h2>
+        <p>
+          The Game displays advertisements provided by <strong>third-party advertising networks</strong>.
+          These services may use advertising identifiers and similar technologies to display ads and measure
+          their effectiveness. Advertising partners process data according to their own privacy policies.
+        </p>
+      </section>
+
+      <section class="card span2">
+        <h2>4. Third-Party Services</h2>
+        <p>The Game relies on third-party services such as:</p>
+        <ul>
+          <li><strong>Unity Technologies</strong> (game engine and related services)</li>
+          <li><strong>Google Play Services</strong> (distribution platform)</li>
+          <li><strong>Advertising services</strong> (e.g., Unity Ads, Google AdMob, or similar providers)</li>
+        </ul>
+        <p>
+          These services may collect information as described in their respective privacy policies.
+        </p>
+      </section>
+
+      <section class="card">
+        <h2>5. How Information Is Used</h2>
+        <p>Automatically collected information may be used to:</p>
+        <ul>
+          <li>display advertisements</li>
+          <li>monitor and improve performance and stability</li>
+          <li>analyze crashes and technical issues</li>
+          <li>improve overall user experience</li>
+        </ul>
+        <p>We do not use this information to personally identify users.</p>
+      </section>
+
+      <section class="card">
+        <h2>6. Children’s Privacy</h2>
+        <p>
+          The Game is suitable for a <strong>general audience</strong> and does not contain content with age restrictions.
+          We do not knowingly collect personal information from children. If you believe that personal data of a child
+          has been collected, please contact us and we will take appropriate action.
+        </p>
+      </section>
+
+      <section class="card span2">
+        <h2>7. Data Sharing</h2>
+        <p>
+          We do <strong>not</strong> sell, trade, or share personal data with third parties.
+          Data may be processed by third-party services only as necessary to operate the Game (such as advertising and
+          platform services).
+        </p>
+      </section>
+
+      <section class="card">
+        <h2>8. Changes to This Policy</h2>
+        <p>
+          This Privacy Policy may be updated from time to time. Any changes will be published on this page.
+          Continued use of the Game after changes indicates acceptance of the updated Privacy Policy.
+        </p>
+      </section>
+
+      <section class="card">
+        <h2>9. Contact</h2>
+        <p>
+          If you have any questions or concerns about this Privacy Policy, contact us at:
+        </p>
+        <p>
+          <strong>Email:</strong> <a href="mailto:support@taskject.com">support@taskject.com</a>
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      © <span id="y"></span> FootballLife • Published for Google Play compliance
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
